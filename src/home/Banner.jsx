@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import productData from "../products.json";
 import { Link } from "react-router-dom";
+import SelectedCategory from "../components/SelectedCategory";
 
 // VARIABLES
 const title = (
@@ -47,6 +48,7 @@ const Banner = () => {
         <div className="banner-content">
           {title}
           <form>
+            <SelectedCategory select={"all"} />
             <input
               type="text"
               name="search"
@@ -55,6 +57,9 @@ const Banner = () => {
               value={searchInput}
               onChange={handleSearch}
             />
+            <button type="submit">
+              <i className="icofont-search"></i>
+            </button>
           </form>
 
           {/* Marquee with bouncing text behavior */}
