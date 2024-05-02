@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Rating from "../components/Rating";
 
 const title = "Our Products";
 
@@ -131,7 +132,9 @@ const CategoryShowcase = () => {
                         <div className="course-cate">
                           <a href="#">{product.cate}</a>
                         </div>
-                        <div className="course-review"></div>
+                        <div className="course-review">
+                          <Rating />
+                        </div>
                       </div>
                     </div>
                   </div>
