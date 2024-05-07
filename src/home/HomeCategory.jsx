@@ -63,7 +63,7 @@ const HomeCategory = () => {
                   <div className="category-inner">
                     {/* image thumbnail */}
                     <div className="category-thumb">
-                      <img src={val.imgUrl} alt="" />
+                      <img src={val.imgUrl} alt={val.title} />
                     </div>
 
                     {/* content */}

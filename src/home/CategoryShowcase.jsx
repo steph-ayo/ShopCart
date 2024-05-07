@@ -146,7 +146,7 @@ const CategoryShowcase = () => {
                   <div className="course-inner">
                     {/* course thumb */}
                     <div className="course-thumb">
-                      <img src={product.imgUrl} alt="" />
+                      <img src={product.imgUrl} alt={product.title} />
                       <div className="course-category">
                         <div className="course-cate">
                           <a href="#">{product.cate}</a>
