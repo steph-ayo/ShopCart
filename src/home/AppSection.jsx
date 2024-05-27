@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import AppImgA from "/src/assets/images/app/01.jpg";
 import AppImgB from "/src/assets/images/app/02.jpg";
 
-const btnText = "Sign up foR Free";
+const btnText = "Sign up for Free";
 const title = "Shop Anywhere, Anywhere";
 const desc =
   "Take shoping on your device with our app & learn all time what you want. Just download & install & start to learn";

@@ -150,7 +150,7 @@ const Footer = () => {
     <footer className="style-2">
       <div className="footer-top dark-view padding-tb">
         <div className="container">
-          <div className="row">
+          <div className="row g-4 row-cols-xl-4 row-cols-sm-2 row-cols-1 justify-content-center">
             {/* Footer Address column */}
             <div className="col">
               <div className="footer-item our-address">
@@ -257,6 +257,28 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer bottom */}
+      <div className="footer-bottom">
+        <div className="container">
+          <div className="section-wrapper">
+            <p>
+              &copy; 2024 <Link to="/">Shop Cart</Link>
+              Designed by{" "}
+              <a href="/" target="_blank">
+                Popoola
+              </a>
+            </p>
+            <div className="footer-bottom-list">
+              {footerbottomList.map((val, i) => (
+                <a href="#" key={i}>
+                  {val.text}
+                </a>
+              ))}
             </div>
           </div>
         </div>
